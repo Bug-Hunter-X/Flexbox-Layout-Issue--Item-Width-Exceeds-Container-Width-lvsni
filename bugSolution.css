@@ -1,0 +1,17 @@
+The solution involves using the `flex-wrap` property to allow items to wrap onto multiple lines when necessary:
+
+```css
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* This line solves the issue */
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+```
+
+By adding `flex-wrap: wrap;`, the flex items will automatically wrap to the next line if their combined width exceeds the container width, preventing the layout collapse.
